@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Movie from '../Components/Movie'
 
-
-class MovieContainer extends Component {
-    state = {  }
-    render() { 
-        return (  
-            <h1>Movies go Here</h1>
+const MovieContainer = (props) => {
+    return (  
+        <div>
+          {console.log(props.movies.results)}
+        {props.movies.results.map(movie => 
+            <Movie                     
+                key={movie.id}
+                movie={movie}
+            />
+        )}
+        
+        </div>
         );
-    }
+    
 }
  
 export default MovieContainer;

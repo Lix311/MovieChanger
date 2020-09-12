@@ -11,10 +11,10 @@ class MainContainer extends Component {
             <Switch>
                 <Route
                 
-                    exact path="/home"
+                    exact path="/"
                     render={()=>
                         <MovieContainer 
-                        jobs = {this.props.jobs}
+                        movies = {this.props.movies}
                         
                         />
                     }
@@ -22,23 +22,26 @@ class MainContainer extends Component {
                 
                 <Route
                     exact path="/signup"
+                    render={()=>
+                        <h1>signup</h1>
+                    }
                     
                 /> 
             
                 <Route
                     exact path="/login"
-                    
+                    render={()=>
+                        <h1>login</h1>
+                    }
                 />
 
                 <Route
                     exact path="/details"
-                    
+                    render={()=>
+                        <h1>details</h1>
+                    }
                 />
 
-                <Route
-                    exact path="/signup"
-                    
-                />
 
             </Switch>
         </div>
