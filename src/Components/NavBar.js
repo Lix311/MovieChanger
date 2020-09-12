@@ -10,7 +10,7 @@ const NavBar = () => {
     return (  
         
         <BootstrapNav fixed='top' bg="dark" variant="dark">
-            <BootstrapNav.Brand href="/login">BlockBuster 2.0</BootstrapNav.Brand>
+            <BootstrapNav.Brand href="/">BlockBuster 2.0</BootstrapNav.Brand>
             {/* <Nav className="mr-auto"> */}
             <div className='navbar-nav ml-auto'>
               <Link className='nav-item nav-link mx-3' to="/signup">SignUp</Link>

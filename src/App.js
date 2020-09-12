@@ -15,7 +15,7 @@ class App extends Component {
 
   render(){
     if (this.state.movies.results === undefined){
-      return <div>Loading...</div>
+      return <div></div>
     }
   return (
     <div className="App">

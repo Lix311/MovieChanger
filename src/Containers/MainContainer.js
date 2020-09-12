@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import NavBar from '../Components/NavBar'
 import {Route, Switch} from 'react-router-dom'
 import MovieContainer from '../Containers/MovieContainer'
+import HomeContainer from '../Containers/HomeContainer'
 
 class MainContainer extends Component {
     render(){
@@ -9,9 +10,19 @@ class MainContainer extends Component {
         <div>
             <NavBar/>
             <Switch>
+                
+            <Route
+                
+                exact path="/"
+                render={()=>
+                    <HomeContainer/>
+                }
+            /> 
+                
+                
                 <Route
                 
-                    exact path="/"
+                    exact path="/home"
                     render={()=>
                         <MovieContainer 
                         movies = {this.props.movies}
