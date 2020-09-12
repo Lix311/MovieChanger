@@ -35,7 +35,7 @@ class Movie extends Component {
     }
 
     clickHandler = () => {
-        this.props.history.push('/home/' + this.props.movie.id)
+        this.props.history.push('/movie/' + this.props.movie.id)
     }
     
     render() { 
