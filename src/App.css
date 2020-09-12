@@ -24,8 +24,8 @@ body {
 
 .home-btn {
   position: absolute;
-  top: 72%;
-  right: 55%;
+  top: 88%;
+  right: 57%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: transparent;
@@ -42,8 +42,20 @@ body {
 }
 
 .home-btn:hover {
-  background-color: goldenrod; 
+  background-color: rgb(228, 185, 79); 
   color: white;
+}
+
+.movie-card{
+  background-color: black;
+    height: 100%;
+    width: 400px;
+    padding: 8px;
+    margin: 8px;
+}
+
+.movie-img{
+  padding: 10px;
 }
 
 
