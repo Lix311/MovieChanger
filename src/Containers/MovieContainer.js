@@ -1,10 +1,12 @@
 import React from 'react';
 import Movie from '../Components/Movie'
+import SearchBar from '../Components/SearchBar'
 
 const MovieContainer = (props) => {
     return (  
         <div>
-          {console.log(props.movies.results)}
+        <div className='movie-container'>
+        
         {props.movies.results.map(movie => 
             <Movie                     
                 key={movie.id}
@@ -12,6 +14,7 @@ const MovieContainer = (props) => {
             />
         )}
         
+        </div>
         </div>
         );
     

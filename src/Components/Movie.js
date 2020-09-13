@@ -7,23 +7,25 @@ class Movie extends Component {
 
     getGenre = (genreids) => {
         let genreArray = []
+
+       
         genreids.map(id => {
-            if (id === 28){genreArray.push("Action" + ' ')}
+            if ((genreArray.length < 5) && (id === 28)){genreArray.push("Action" + ' ')}
             if (id === 12){genreArray.push("Adventure" + ' ')}
             if (id === 16){genreArray.push("Animation"+ ' ')}
             if (id === 35){genreArray.push("Comedy"+ ' ') }
             if (id === 80){genreArray.push("Crime"+ ' ')}
-            if (id === 99){genreArray.push("Documentary"+ ' ')}
-            if (id === 18){genreArray.push("Drama"+ ' ') }
-            if (id === 10751){genreArray.push("Family"+ ' ')} 
-            if (id === 14){genreArray.push("Fantasy"+ ' ') }
-            if (id === 36){genreArray.push("History"+ ' ') }
-            if (id === 27){genreArray.push("Horror"+ ' ') }
+            if ((genreArray.length < 5) && (id === 99)){genreArray.push("Documentary"+ ' ')}
+            if ((genreArray.length < 5) && (id === 18)){genreArray.push("Drama"+ ' ') }
+            if ((genreArray.length < 5) && (id === 10751)){genreArray.push("Family"+ ' ')} 
+            if ((genreArray.length < 5) && (id === 14)){genreArray.push("Fantasy"+ ' ') }
+            if ((genreArray.length < 5) && (id === 36)){genreArray.push("History"+ ' ') }
+            if ((genreArray.length < 5) && (id === 27)){genreArray.push("Horror"+ ' ') }
             if (id === 10402){genreArray.push("Music"+ ' ')} 
             if (id === 9648){genreArray.push("Mystery"+ ' ')} 
             if (id === 10749){genreArray.push("Romance"+ ' ')} 
             if (id === 878){genreArray.push("Science Fiction"+ ' ')}
-            if (id === 10770){genreArray.push("TV Movie"+ ' ') }
+            if ((genreArray.length < 5) && (id === 10770)){genreArray.push("TV Movie"+ ' ') }
             if (id === 53){genreArray.push("Thriller"+ ' ') }
             if (id === 10752){genreArray.push("War"+ ' ') }
             if (id === 37){genreArray.push("Western"+ ' ')}
@@ -40,10 +42,10 @@ class Movie extends Component {
     
     render() { 
         return (  
-        <div className='movie-card'>
+        <div >
             {console.log(this.props.movie)}
             <img onClick={this.clickHandler} className='movie-img' src={'http://image.tmdb.org/t/p/w185//' + this.props.movie.poster_path}/>
-            <Card>
+            <Card className='movie-card'>
     <Card.Body>
         <Card.Title>{this.props.movie.title}</Card.Title>
       <Card.Text>

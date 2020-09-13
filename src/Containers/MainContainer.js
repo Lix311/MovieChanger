@@ -36,7 +36,9 @@ class MainContainer extends Component {
                 
                     exact path="/movie/:id"
                     render={()=>
-                        <DetailsContainer/>
+                        <DetailsContainer
+                        movies = {this.props.movies}
+                        />
                         
                     }
                 /> 
