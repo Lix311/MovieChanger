@@ -43,7 +43,6 @@ class Movie extends Component {
     render() { 
         return (  
         <div >
-            {console.log(this.props.movie)}
             <img onClick={this.clickHandler} className='movie-img' src={'http://image.tmdb.org/t/p/w185//' + this.props.movie.poster_path}/>
             <Card className='movie-card'>
     <Card.Body>

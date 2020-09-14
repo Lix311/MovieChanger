@@ -1,9 +1,9 @@
 import React from 'react';
 import Movie from '../Components/Movie'
-import SearchBar from '../Components/SearchBar'
 
-const MovieContainer = (props) => {
-    return (  
+
+const MovieContainer = (props) => { 
+    return (   
         <div>
         <div className='movie-container'>
         
@@ -16,6 +16,7 @@ const MovieContainer = (props) => {
         
         </div>
         </div>
+        
         );
     
 }

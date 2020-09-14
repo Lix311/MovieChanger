@@ -9,7 +9,7 @@ class MainContainer extends Component {
     render(){
   return (  
         <div>
-            <NavBar/>
+            <NavBar movieSearch = {this.props.movieSearch}/>
             <Switch>
                 
             <Route
@@ -27,6 +27,7 @@ class MainContainer extends Component {
                     render={()=>
                         <MovieContainer 
                         movies = {this.props.movies}
+                        
                         
                         />
                     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom'
-import {Jumbotron, Container, Row, Col, Image, Button} from 'react-bootstrap'
+import {Image} from 'react-bootstrap'
 import '../App.css';
 
 class HomeContainer extends Component {
