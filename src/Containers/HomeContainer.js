@@ -13,7 +13,7 @@ class HomeContainer extends Component {
     render() { 
         // changed emails for gits commits to work
         return (  
-            <div>
+            <div className='home-div'>
                 <Image src="assets/theatre.jpg" className='home-img'/>
                 <button onClick={this.clickHandler} className='home-btn'>Enter</button>
                 

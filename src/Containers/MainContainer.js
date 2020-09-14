@@ -27,6 +27,7 @@ class MainContainer extends Component {
                     render={()=>
                         <MovieContainer 
                         movies = {this.props.movies}
+                        search = {this.props.search}
                         
                         
                         />

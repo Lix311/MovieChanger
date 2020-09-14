@@ -20,11 +20,8 @@ class App extends Component {
 
   movieSearch = (event) => {
      
-      // this.setState({search: event.target.value})
-      // let searchedMovies = this.state.movies.results.filter(movie => movie.title.toLowerCase().includes(this.state.search)) 
-      // this.setState({searchedMovies: searchedMovies}) 
-
-      // need help when Im filtering it gets rid of results
+      this.setState({search: event.target.value})
+      
 
       
 
@@ -43,6 +40,7 @@ class App extends Component {
      <MainContainer
         movies={this.state.movies}
         movieSearch={this.movieSearch}
+        search={this.state.search}
      />
     </div>
   );

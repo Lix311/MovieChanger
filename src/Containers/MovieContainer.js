@@ -3,11 +3,16 @@ import Movie from '../Components/Movie'
 
 
 const MovieContainer = (props) => { 
+    
+    let filtered = props.search != '' ? props.movies.results.filter(movie => movie.title.toLowerCase().includes(props.search)) : props.movies.results
+    
     return (   
-        <div>
+        
         <div className='movie-container'>
         
-        {props.movies.results.map(movie => 
+        {
+
+        filtered.map(movie => 
             <Movie                     
                 key={movie.id}
                 movie={movie}
@@ -15,7 +20,7 @@ const MovieContainer = (props) => {
         )}
         
         </div>
-        </div>
+        
         
         );
     
